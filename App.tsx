@@ -9,6 +9,7 @@ import { fetchWeatherData } from './services/weatherService';
 import { WeatherData, GeocodingResult } from './types';
 import { Loader2, Home, Briefcase, Menu, X, Map as MapIcon, Calendar, Clock, CloudRain } from 'lucide-react';
 
+const APP_NAME = 'Skycast from AbramsWorks';
 // Default location (London)
 const DEFAULT_LOCATION: GeocodingResult = {
   id: 2643743,
@@ -140,7 +141,7 @@ export default function App() {
                 </svg>
               </div>
               <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400 hidden sm:block">
-                SkyCast
+                {APP_NAME}
               </h1>
             </div>
 
@@ -199,7 +200,7 @@ export default function App() {
                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
                 </svg>
               </div>
-              <span className="text-2xl font-bold text-white">SkyCast</span>
+              <span className="text-2xl font-bold text-white">{APP_NAME}</span>
             </div>
             <button onClick={() => setIsMenuOpen(false)} className="p-2 text-slate-400 hover:text-white bg-white/5 rounded-full hover:bg-white/10 transition-colors">
               <X size={24} />
@@ -249,7 +250,7 @@ export default function App() {
           </nav>
 
           <div className="mt-auto text-center text-slate-500 text-sm">
-             <p>SkyCast Weather App v1.2</p>
+             <p>{APP_NAME} v1.2</p>
           </div>
         </div>
       )}

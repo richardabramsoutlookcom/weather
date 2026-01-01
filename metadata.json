@@ -1,5 +1,5 @@
 {
-  "name": "SkyCast Weather",
+  "name": "Skycast from AbramsWorks",
   "description": "A comprehensive weather dashboard using Open-Meteo for precise data and RainViewer for radar visualization. Features current conditions, 10-day outlooks, hourly forecasts, and an interactive precipitation radar.",
   "requestFramePermissions": [
     "geolocation"
